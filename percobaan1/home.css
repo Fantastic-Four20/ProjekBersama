@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* biar ukuran box/div gak berubah,
+    karna kalo dikasih padding ukuran box berubah */
+    box-sizing: border-box;
+    font-family: "";
+}
+
+
+body{
+    background-color: rgb(189, 128, 247);
+    /* biar ada efex scroll */
+    padding-bottom: 500px;
+}
+
+nav{
+    background-color: rgb(77, 30, 121);
+    position:fixed ;
+    border-radius: 14px;
+    display: flex;
+    /* jadi posisi paling depan */
+    z-index: 999;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    transition: all;
+    transition-duration: 300ms;
+    cursor: grab;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+    border-radius: 24px;
+    background: linear-gradient(to right,rgb(79, 233, 207),rgb(15, 159, 226));
+}
+
+nav div img{
+    max-width: 60px;
+}
+
+.btn{
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 100px 10px;
+    border: none;
+    border-radius: 24px;
+    background: linear-gradient(to right,rgb(206, 59, 243),rgb(15, 159, 226));
+}
+
+.isian{
+    text-align: center;
+    height: 300px;
+    margin: 50px;
+}
+
+.gambar{
+    display: flex;
+    background-color: aliceblue;
+    border: 1px solid rgba(41, 34, 34, 0.158);
+    border-radius: 24PX;
+    /* jarak antar  div */
+    justify-content: space-between;
+    padding: 33px;
+    max-width: 8000px;
+    margin: 24px;
+}
+
+.satu ,.dua, .tiga{
+    background-color: rgb(225, 206, 243);
+    padding: 33px ;
+    border-radius: 20px;
+}
+
+/* styling card */
+.kotak{
+    /* jarak card dari elemen sebelumnya */
+    margin: 150px auto;
+    width: 800px;
+   display: flex;
+  
+   /*               BIKIN CARD                       */
+
+}
+
+.card{
+    border:1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 20px;
+    background-color: rgb(234, 165, 243);
+    object-fit: cover;
+    overflow: hidden;
+    /* jarak antar card */
+    margin: 10px;
+    /* ukuran tiap card */
+    flex: 1;
+
+}
+
+/* bikin isian gambar dalem div sesuai ukuranya */
+.card .judul1{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../bahan/hacking.jpg);
+    text-align: center ;
+}
+
+/* duplikat setting atasnya*/
+.card .judul2{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../bahan/blockchain.jpg);
+    text-align: center ;
+}
+
+.card .judul3{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../bahan/marketing.jpg);
+    text-align: center ;
+}
+
+.card .isicard{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* ukuran car ke 2 */
+.card.Besar{
+    transform: scale(1.13);
+}
+
+.judul h4{
+    padding-top: 10px;
+}
+
+.footer{
+    
+    background-color: rgb(212, 167, 255);
+    padding: 0;
+}

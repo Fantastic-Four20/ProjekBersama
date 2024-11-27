@@ -1,0 +1,26 @@
+body,html{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+.container{
+  width: 800px auto;
+  height: 800px;
+
+}
+
+.header{
+  background-color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+.conten{
+  background-color: rgb(37, 17, 17);
+  display: flex;
+}
+
+footer{
+  background-color: black;
+}
